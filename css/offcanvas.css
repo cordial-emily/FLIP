@@ -20,8 +20,11 @@ body .container .row .jumbotron{
     padding:0px;
 }
 body .navbar-inverse {
-/* background-color: #222; */
-border-color: #080808;
+    background-color: #ffffff;
+    border-color: #CCC;
+    font-size: 150%;
+    font-family: sans-serif;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5{
