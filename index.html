@@ -8,13 +8,15 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Off Canvas Template for Bootstrap</title>
+    <title>Flip the Script</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/offcanvas.css" rel="stylesheet">
+    <!-- Google fonts "UBUNTU" -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,45 +48,43 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Artists</a></li>
             <li><a href="#about">Scripts</a></li>
-            <li><form class="navbar-form pull-right">
-  <input type="text" class="span2">
-  <button type="submit" class="btn">Submit</button>
-</form></li>
             
           </ul>
         </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </div><!-- /.navbar -->
 
-    <div class="container">
+    <div class="container bot">
 
       <div class="row row-offcanvas row-offcanvas-right">
 
         <div class="col-xs-12 col-sm-9">
           <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+            <!-- <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>-->
           </p>
           <div class="jumbotron">
             <img src="images/flip_logo_4.0.png" width="100%" alt="event pic" width="100%"/>
           </div>
-           <div>
-            <h1>Latest Article</h1>
-            <p>By FLIP team</p>
-          </div>
-          <div class="row">
-            <div class="col-6 col-sm-6 col-lg-4">
+               <div>
+                <h1 style="font-family: 'Ubuntu', sans-serif; padding-bottom: 30px;">Dialogue About Art In Your Community</h1>
+              </div>
+              <div class="row">
+                <div class="col-6 col-sm-6 col-lg-4">
 
-              <img class="img-rounded" src="images/vulturenight.4.jpg" alt="event pic" width="100%"/>
-            </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-8">
-              
-              <p>The ultimate ART APP, where Sacramento artists can show their work, meet like-minded creatives, discover new venues, share, opine and get exposed. 
+                  <img class="img-rounded" src="images/vulturenight.4.jpg" alt="event pic" width="100%"/>
+                <p>By FLIP team</p>
+                </div><!--/span-->
+                <div class="col-6 col-sm-6 col-lg-8">
+                  <div class="text-box">
+                  <p>The ultimate ART APP, where Sacramento artists can show their work, meet like-minded creatives, discover new venues, share, opine and get exposed. <br></br>
 
-So you’ve been hunkered down in your little studio creating breathtaking work that only you, your neighbor and your dog know about. You forgot to get an agent and the Crocker is not knocking on your door. We understand. 
+    So you’ve been hunkered down in your little studio creating breathtaking work that only you, your neighbor and your dog know about. You forgot to get an agent and the Crocker is not knocking on your door. We understand. <br></br>
 
-Did you know that Leonardo Di Vinci ‘s name was actually a moniker denoting his neighborhood of Vinci? Greatness begins at the local level. If you fancy yourself as a painter, a musician, a poet, sculptor—ANY type of Sacramento artist, you can become a member.</p>
-              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div><!--/span-->
+    Did you know that Leonardo Di Vinci ‘s name was actually a moniker denoting his neighborhood of Vinci? Greatness begins at the local level. If you fancy yourself as a painter, a musician, a poet, sculptor—ANY type of Sacramento artist, you can become a member.</p>
+                  <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                  </div>
+                </div><!--/span-->
+            
             <!--<div class="col-6 col-sm-6 col-lg-4">
               <h2>Heading</h2>
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
@@ -108,12 +108,12 @@ Did you know that Leonardo Di Vinci ‘s name was actually a moniker denoting hi
           </div><!--/row-->
         </div><!--/span-->
 
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation" style="margin-top: 20px;">
           <div class="list-group">
-            <h2>TRENDING</h2>
-            <a href="#" class="list-group-item active">John Doe's metal sculptures</a>
+            <h2>Trending</h2>
+            <a href="#" class="list-group-item active"></a>
             <a href="#" class="list-group-item">Digital dance show</a>
-            <a href="#" class="list-group-item">Another Script</a>
+            <a href="#" class="list-group-item">John Doe's metal sculptures</a>
             <a href="#" class="list-group-item">Another Script</a>
             <a href="#" class="list-group-item">Another Script</a>
             <a href="#" class="list-group-item">Another Script</a>
@@ -125,22 +125,25 @@ Did you know that Leonardo Di Vinci ‘s name was actually a moniker denoting hi
         </div><!--/span-->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
            <div class="list-group">
-            <h2>Register</h2>
-            <a href="#" class="list-group-item active">John Doe's metal sculptures</a>
-            <a href="#" class="list-group-item">Digital dance show</a>
+            <h2>Login</h2>
+            <a href="#" class="list-group-item active"></a>
+            <a class="list-group-item">
+            <div class="form-group">
+    <input type="text" class="form-control" placeholder="Username">
+  </div>
+            <div class="form-group">
+    <input type="text" class="form-control" placeholder="Password">
+  </div>
+            </a>
           </div>
         </div><!--/span-->
       </div><!--/row-->
 
-      <hr>
-
-      <footer>
-        <p>&copy; FLIP the Script 2014</p>
-      </footer>
-
     </div><!--/.container-->
 
-
+    <footer>
+        <p>&copy; FLIP the Script 2014</p>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
