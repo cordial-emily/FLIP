@@ -5,6 +5,7 @@
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
+  font-size: 16px;
 }
 body {
   padding-top: 70px;
@@ -33,12 +34,18 @@ body .navbar-inverse {
     background-color: #8794A0;
     border-color: #879480;
 }
+.container .collapse .navbar-nav .active a {
+    color: #fff;
+    background-color: #8794A0;
+}
 
 h1, h2, h3, h4, h5{
     font-family: sans-serif;
     font-weight: 300;
 }
-
+.container .row col-xs-12 col-sm-9{
+ line-height: 25
+}
 /*
  * Off Canvas
  * --------------------------------------------------
